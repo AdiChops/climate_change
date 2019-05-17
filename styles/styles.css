@@ -1,0 +1,236 @@
+  body, html{
+	text-align: center;
+	font-family: Calibri, sans-serif;
+	height: 100%;
+	width: 100%;
+	padding:0;
+	margin:0;
+	scroll-behavior: smooth;
+  }
+  main{
+	display: grid;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+	grid-template-columns: auto auto auto auto;
+  }
+  main div {
+	border: solid 1px black;
+	border-radius: 5px;
+	background-color: white;
+  }
+  header{
+	background-image: url("../images/pollution.jpg");
+	font-size: 25px;
+	letter-spacing: 10px;
+  }
+  article{
+	height:100%;
+  }
+  header p, h1{
+	text-shadow: 4px 2px #3B54B8;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+  }
+
+  #scroll {
+	  padding-top: 80px;
+	  bottom: 1em;
+	  position: absolute;
+	  bottom: 20px;
+	  left: 50%;
+	  z-index: 2;
+	  display: inline-block;
+	  -webkit-transform: translate(0, -50%);
+	  transform: translate(0, -50%);
+	  color: #fff;
+	  letter-spacing: .1em;
+	  text-decoration: none;
+	  transition: opacity .3s;
+	}
+	#scroll:hover {
+	  opacity: .5;
+	}
+	#scroll span {
+	  position: absolute;
+	  top: 0;
+	  left: 50%;
+	  width: 24px;
+	  height: 24px;
+	  margin-left: -12px;
+	  border-left: 1px solid #fff;
+	  border-bottom: 1px solid #fff;
+	  -webkit-transform: rotate(-45deg);
+	  transform: rotate(-45deg);
+	  -webkit-animation: sdb07 2s infinite;
+	  animation: sdb07 2s infinite;
+	  opacity: 0;
+	  box-sizing: border-box;
+	}
+	#scroll span:nth-of-type(1) {
+	  -webkit-animation-delay: 0s;
+	  animation-delay: 0s;
+	}
+	#scroll span:nth-of-type(2) {
+	  top: 16px;
+	  -webkit-animation-delay: .15s;
+	  animation-delay: .15s;
+	}
+	#scroll span:nth-of-type(3) {
+	  top: 32px;
+	  -webkit-animation-delay: .3s;
+	  animation-delay: .3s;
+	}
+	@-webkit-keyframes sdb07 {
+	  0% {
+		opacity: 0;
+	  }
+	  50% {
+		opacity: 1;
+	  }
+	  100% {
+		opacity: 0;
+	  }
+	}
+	@keyframes sdb07 {
+	  0% {
+		opacity: 0;
+	  }
+	  50% {
+		opacity: 1;
+	  }
+	  100% {
+		opacity: 0;
+	  }
+	}
+	@-webkit-keyframes fade {
+	  0% {
+		filter: none;
+	  }
+	  50% {
+		filter: blur(3px);
+	  }
+	  100% {
+		filter: none;
+	  }
+	}
+	@keyframes fade {
+	  0% {
+		filter: none;
+	  }
+	  50% {
+		filter: blur(3px);
+	  }
+	  100% {
+		filter: none;
+	  }
+	}
+	
+	@-webkit-keyframes fadeback {
+	  0% {
+		filter: none;
+	  }
+	  50% {
+		filter: blur(3px);
+	  }
+	  100% {
+		filter: none;
+	  }
+	}
+	@keyframes fadeback {
+	  0% {
+		filter: none;
+	  }
+	  50% {
+		filter: blur(3px);
+	  }
+	  100% {
+		filter: none;
+	  }
+	}
+	#navul{
+		list-style-type: none;
+	}
+	nav{
+		background-image: url("../images/melt.jpg");
+		transition: all 0.25s ease-in-out;
+	}
+	nav a{
+		text-decoration:none;
+		color: white;
+		font-size:4em;
+		width: 100%;
+		text-shadow: 2px 2px black;
+	}
+	nav li a:hover{
+		color: WhiteSmoke;
+		font-size: 4.2em;
+	}
+	#navul{
+		margin-left:auto;
+		margin-right:auto;
+	}
+		  
+	nav li{
+		border-bottom: solid 2px black;
+	}
+	nav li:last-of-type{
+		border-bottom: 0;
+	}
+	#facts, #down, #stats, header{
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		padding: 18px;
+		margin: 0;
+		color: white;
+	}
+	#facts{
+		background-image: url("../images/carbon.jpg");
+	}
+	#facts p{
+		font-size: 1.5em;
+		color: black;
+	}
+	#stats{
+		background-image: url("../images/beach.jpg");
+	}
+	#gohome{
+		display: none;
+	}
+	@media all and (min-width: 768px){
+		  #scroll{
+			margin-left:auto;
+			margin-right:auto;
+		  }
+		  header p{
+			position:relative;
+			top:30%;
+		  }
+		  main {
+			grid-template-columns: auto auto auto auto auto auto auto;
+		  }
+		  #info_title{
+			font-size:2em;
+		  }
+		  #base_period{
+			font-size:1.5em;
+		  }
+		  #navul{
+			  width: 80%;
+		  }
+		  #gohome{
+			  position: fixed;
+			  z-index: 4;
+			  left: 0.5em;
+			  bottom: 0.5em;
+			  width: 2em;
+			  height: 2em;
+			  border-radius: 50%;
+			  font-size: 3em;
+			  color: black;
+			  background-color: white;
+			  opacity: 0.65;
+		  }
+	}
